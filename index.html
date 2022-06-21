@@ -2,23 +2,31 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Dad Jokes</title><link rel="stylesheet" href="css/normalize.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dad Jokes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
+
     <script src="js/script.js" defer></script>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid px-4 py-5 my-5 text-center">
       <h1>Dad Jokes</h1>
-      <button>Get Joke</button>
-      <div class="display-joke">
-        <div class="half-width dad-image">
-          <img class="dad-image">
+      <div class="display-joke row text-center">
+        <div class="col-md-6 dad-image">
+          <!-- Dad Image -->
         </div>
-        <div class="half-width">
-          <p class="joke"></p>
+        <div class="col-md-6 d-flex align-items-center">
+          <p class="joke lead"></p>
         </div>
       </div>
-    </div>
 
+          <button type="button" class="btn btn-dark">Get Joke</button>
+
+
+    </div>
   </body>
 </html>

@@ -1,5 +1,6 @@
 const dadImage = document.querySelector(".dad-image");
 
+const card = document.querySelector(".card");
 const joke = document.querySelector(".joke");
 
 const button = document.querySelector("button");
@@ -17,10 +18,13 @@ const getJoke = async function () {
     };
 
     const request = await fetch(url, options);
+    console.log(request);
     const response = await request.json();
-
+    console.log(response);
   // display joke
     joke.innerText = response.joke;
+
+
 };
 
 const getRandomImage = function () {
@@ -52,10 +56,12 @@ const getRandomImage = function () {
   const randomIndex = Math.floor( Math.random() * dadImages.length);
 
   // display random image
-  dadImage.innerHTML = `<img src="${dadImages[randomIndex]}" alt="Black and white cartoon Hipster Dad">`;
+  dadImage.innerHTML = `<img src="${dadImages[randomIndex]}" alt="Black and white cartoon Hipster Dad" class="img-fluid">`;
 };
 
 button.addEventListener("click", function(){
   getJoke();
   getRandomImage();
 });
+
+// getRandomImage();
