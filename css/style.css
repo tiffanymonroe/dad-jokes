@@ -2,5 +2,11 @@
   width: 100%;
 }
 .half-width {
+  width: 45%;
+  float: left;
+}
+
+img {
   width: 50%;
+  height: 50%;
 }
